@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+<style type="text/css">
+	p.selected { color:red; }
+	p.highlight { background:yellow; }
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+            $("p").addClass("selected");
+            $("#myid").addClass("highlight");
+            $(".highlight").removeClass("highlight");
+    });
+</script>
+</head>
+
+<body>
+	<p>This is first paragraph.</p>
+    <p id="myid">This is second paragraph.</p>
+    <p class="highlight">This is first paragraph.</p>
+</body>
+</html>

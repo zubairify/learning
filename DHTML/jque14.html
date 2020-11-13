@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#lnkCollapse").click(function () {
+        $("#contentArea").slideToggle("slow");
+    });
+});
+</script>
+</head>
+<body>
+<div class="box" style="width: 400px">
+    <div class="title">
+        Collapse Box (<a id="lnkCollapse" href="#">Click Here</a>)
+    </div>
+    <div id="contentArea" class="content">    
+        <img src="scene.jpg" height=200 width=300>
+    </div>
+</div>
+</body>
+</html>

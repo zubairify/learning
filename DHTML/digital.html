@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function timer() {
+		dt = new Date();
+		time = dt.getHours() + ":" + dt.getMinutes() + ":" + 
+					dt.getSeconds();
+		digi.value = time;
+		// setTimeout("timer()", 1000);
+	}
+	setInterval("timer()", 1000);
+</script>
+</head>
+<body >
+<input id="digi" style="font:24pt verdana;border:none">
+</body>
+</html>

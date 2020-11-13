@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	var dt = new Date();
+	var dow = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+	var mnths = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep");
+	
+	document.write("<h2>" + dow[dt.getDay()] + "</h2>");
+	document.write("<h2>" + dt.getDay() + "</h2>");
+	document.write("<h2>" + dt.getDate() + "</h2>");
+	document.write("<h2>" + mnths[dt.getMonth()] + "</h2>");
+	
+	document.write("<h2>" + dt.getHours() + ":" + dt.getMinutes()+ ":" 
+		+ dt.getSeconds() + "</h2>");
+
+	document.write("<h3>" + dt + "</h3>");
+</script>
+</html>

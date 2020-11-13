@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function addFruit() {
+            var fruit = document.getElementById("fruit").value;
+            var basket = document.getElementById("basket");
+            
+            var item = document.createElement("li");
+            var text = document.createTextNode(fruit);
+            item.appendChild(text);
+            
+            basket.appendChild(item);
+        }
+    </script>
+</head>
+<body>
+    Fruit Name: <input id="fruit"> 
+    <input type="button" value="Add Fruit" onclick="addFruit()">
+    <ul id="basket">
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+
+    <select name="fruits">
+        <option>Apple</option>
+        <option>Banana</option>
+    </select>
+</body>
+</html>

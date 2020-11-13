@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+h1{
+    background-color:pink;
+    color:purple;
+    font-family:tahoma;
+    text-shadow: 2px 2px 4px #003366;
+}
+p.red{
+    font:22pt candara;
+    font-style:italic;
+    color:red;
+    width: 11em;
+    border: 1pt solid brown;
+    word-wrap: break-word;
+    text-shadow: -2px -2px black;
+}
+p.blue{font:22pt candara;font-weight:bold;color:blue}
+img{border:5pt solid;border-color:cyan}
+a{
+    font:18pt tahoma;
+    color:violet;
+    text-decoration:none
+}
+a:hover{
+    text-decoration:underline;
+    color:red;
+    background-color:yellow
+}

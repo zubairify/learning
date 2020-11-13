@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+h1 {
+	background-color: pink;
+	color: purple
+}
+
+p.orange {
+	font: 15pt georgia;
+	font-weight: bold;
+	color: orange
+}
+
+p.brown {
+	font: 20pt garamond;
+	font-style: italic;
+	color: brown
+}
+
+img {
+	border: 5pt ridge;
+	border-color: yellow
+}
+
+a {
+	text-decoration: none;
+	background-color: cyan
+}
+
+a:hover {
+	color: magenta;
+	background-color:yellow;
+}
+
+pre {
+	font: 15pt consolas;
+	border: 2pt ridge;
+	background-color: ivory;
+	color: brown
+}
+
+ul, li {
+	display: inline;
+}
+
+li.c1:nth-child(odd) {
+	border: 2pt outset;
+	text-align: center;
+	background-color: lightblue;
+	width: 200px;
+}
+
+li.c1:nth-child(even) {
+	border: 2pt inset;
+	text-align: center;
+	background-color: pink;
+	width: 200px;
+}
+
+li.c2:nth-child(odd) {
+	border: 2pt dashed;
+	text-align: center;
+	background-color: blue;
+	width: 200px;
+}
+
+li.c2:nth-child(even) {
+	border: 2pt dashed;
+	text-align: center;
+	background-color: red;
+	width: 200px;
+}
+
+
+
+
+
+
+
+
+

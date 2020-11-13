@@ -1,0 +1,23 @@
+<html>
+<head>
+<!-- <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+ $("#msgid").html("<h1>This is Hello World by JQuery</h1>");
+});
+
+</script> -->
+<script type="text/javascript">
+    function changeDiv() {
+        var idiv = document.getElementById("msgid");
+        idiv.innerHTML = "<h1>Hello World by JavaScript</h1>";
+    }
+</script>
+</head>
+<body onload="changeDiv()">
+This is Hello World by HTML
+
+<div id="msgid"></div>
+</body>
+</html>

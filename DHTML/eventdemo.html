@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onLoad="alert('Welcome to JavaScript')">
+	
+Enter First Name: <input id="fname"> 
+<input type="button" value="Hello" 
+	onClick="alert('Hello ' + document.getElementById('fname').value)">
+<br>
+Enter Last Name: <input id="lname"
+	onBlur="alert('Hello ' + this.value)"> 
+</body>
+</html>

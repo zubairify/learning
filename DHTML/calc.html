@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+function sum() {
+	var number1 = document.getElementById("num1").value;
+	var number2 = document.getElementById("num2").value;
+	result = parseInt(number1) + parseInt(number2);
+	document.getElementById("result").value = result;
+}
+
+function sub(n1, n2) {
+	var result = n1 - n2.value;
+	document.getElementById("result").value = result;
+}
+
+function testing(n1) {
+	if(isNaN(n1)) {
+		alert("Not a number");
+		document.getElementById("num1").focus();
+	}
+}
+
+function maxim(n1, n2) {
+	var result = n1<n2?n1:n2;
+	document.getElementById("result").value = result;
+}
+
+function validate(email) {
+	var iat = email.indexOf('@');
+	var idot = email.indexOf('.');
+
+	if(iat == -1 || idot == -1 || iat > idot)
+		alert("Invalid Email ID")
+	else
+		alert("Valid Email ID");
+}
+</script>
+</head>
+<body>
+<form id="calcfrm">
+Enter a number: <input id="num1" size=5 
+	onBlur="testing(this.value)"><br>
+Enter another number: <input id="num2" size="5"><hr>
+<input type="button" value="Add" onClick="sum()">  
+<input type="button" value="Subs" onClick="sub(num1.value, num2)"> 
+<input type="button" value="Max" onClick="maxim(num1.value, num2.value)">
+Result: <input id="result" size="5" readonly>
+<hr>
+
+Enter email ID: <input id="email" onBlur="validate(this.value)">
+</form>
+</body>
+</html>

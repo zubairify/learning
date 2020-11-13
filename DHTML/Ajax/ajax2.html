@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+    <script type="text/javascript">
+    function fun1() {
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange=function() {
+            if (xhttp.readyState==4 && xhttp.status==200) {
+                console.log(xhttp.responseText);
+            }
+        }
+        
+        xhttp.open("GET","http://urlecho.appspot.com/echo?body=Hello%20AJAX",true);
+        xhttp.send();
+    } // fun1() close
+    </script>
+</head>
+<body>
+    <button type="button" onClick="fun1()">Get Content</button>    
+</body>
+</html>

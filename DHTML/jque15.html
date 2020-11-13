@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $("#fade img").fadeTo(0, 0.3);
+
+    $("#fade img").hover(function () {
+        $(this).fadeTo("slow", 1.0);
+        },
+        function () {$(this).fadeTo("slow", 0.3);
+        }
+    );
+});
+</script>
+</head>
+<body>
+<div id="fade">
+    <img src="scene.jpg" width="100px" height="100px" />
+    <img src="snow.jpg" width="100px" height="100px" />
+    <img src="car.jpg" width="100px" height="100px" />
+</div>
+</body>
+</html>
